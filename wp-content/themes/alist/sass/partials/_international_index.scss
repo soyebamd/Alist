@@ -1,0 +1,20 @@
+.parents-partners-int{
+  &__subheader-wrap{
+    ul{
+      margin: 35px auto 0;
+      margin-top: 35px !important;
+    }
+    p{
+      min-height: 130px !important;
+      @media screen and (max-width: 1024px){
+        min-height: inherit !important;
+      }
+      @media screen and (min-width: 1025px) and (max-width: 1082px){
+        min-height: 175px !important;
+      }
+      @media screen and (min-width: 1083px) and (max-width: 1260px){
+        min-height: 160px !important;
+      }
+    }
+  }
+}

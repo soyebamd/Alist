@@ -1,0 +1,9 @@
+.imgwrp-cont {
+  @include display(flex);
+  @include flex-wrap(wrap);
+  @include justify-content(space-around);
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+}

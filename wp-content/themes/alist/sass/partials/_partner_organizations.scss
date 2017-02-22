@@ -1,0 +1,49 @@
+.partner-org{
+  &__list-outer-wrap{
+    list-style-type: none;
+    padding-left: 0;
+    @media screen and (min-width: $desktop-container) and (max-width: 1600px){
+      width: 90%;
+    }
+  }
+  &__list-img-wrap{
+    width: 20%;
+    img{
+      width: 100%;
+      max-width: 175px;
+    }
+  }
+  &__meta-wrap{
+    width: 80%;
+    padding-left: 2%;
+    h4{
+      margin-top: 0;
+    }
+    p{
+      max-width: 80%;
+    }
+    a{
+
+    } 
+  }
+  &__list-item{
+    @include display(flex);
+    margin-bottom: 5%;
+  }
+  &__header-wrap{
+    padding: 3% 0;
+    @media screen and (min-width: $desktop-container) and (max-width: 1600px){
+      width: 90%;
+    }
+  }
+  &__pro-img{
+    max-width: 175px;
+    width: 100%;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    float: left;
+  }
+  &__partner-outer-wrap{
+    margin-bottom: 4%;
+  }
+}

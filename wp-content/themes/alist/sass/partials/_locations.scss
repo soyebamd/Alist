@@ -1,0 +1,149 @@
+.us-city{
+  &__list-wrap{
+    @include display(flex);
+    @include flex-wrap(wrap);
+    list-style-type: none;
+    position:relative;
+    margin-left: -40px;
+  }
+  &__list-item{
+    width: 25%;
+    @include display(flex);
+    @include justify-content(center);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    @media screen and (max-width: $tablet-container){
+      width: 50%;
+    }
+  }
+  &__btn-link{
+    margin: 30% 0;
+    height: 35px;
+    width: 65%;
+    background: $red;
+    @include display(flex);
+    @include justify-content(center);
+    @include align-items(center);
+    color: white;
+  }
+  &__tagline-wrap{
+    @include display(flex);
+    @include justify-content(center);
+    padding: 3% 0;
+    p{
+      max-width: $tablet-container;
+      width: 100%;
+      text-align:center;
+      font-family: 'GothamBold';
+      color: $red;
+    }
+  }
+}
+
+.location{
+  &__map-outer-wrap{
+    @include display(flex);
+    background-color: $light-gray;
+    padding: 3% 0;
+    @media screen and (max-width: $tablet-container){
+      @include flex-direction(column);
+      @include align-items(center);
+      padding: 6% 0;
+    }
+  }
+  &__map-wrap{
+    @include display(flex);
+    @include align-items(center);
+    width: 60%;
+    @include justify-content(space-around);
+    @media screen and (max-width: $tablet-container){
+      @include flex-direction(column);
+      width: 80%;
+    }
+  }
+  &__map-meta-wrap{
+    @include display(flex);
+    @include justify-content(center);
+    @include flex-direction(column);
+    width: 40%;
+    a{
+      font-style: initial !important;
+    }
+    p{
+      line-height: 16px;
+    }
+    @media screen and (max-width: $tablet-container){
+      @include flex-direction(column);
+      width: 80%;
+    }
+  }
+  &__map-meta-inner-wrap{
+    border-left: 1px solid $gray;
+    padding-left: 8%;
+    @media screen and (max-width: $tablet-container){
+      border-left: none;
+      padding-left: initial;
+      margin-top: 4%;
+    }
+    h5{
+      margin-top: 0;
+      &:nth-of-type(2){
+        margin-top: 15px;
+      }
+    }
+    p{
+      line-height: 16px;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__address-wrap{
+    width: 45%;
+    padding: 4%;
+    @media screen and (max-width: $tablet-container){
+      padding: 0% 0 6% 0;
+      width: 100%;
+    }
+    p{
+      line-height: 16px;
+    }
+    a{
+      font-style: initial !important;
+    }
+    h5{
+      margin-top: 0;
+    }
+    @media screen and (max-width: $tablet-container){
+      @include order(1);
+    }
+  }
+  &__g-map-outer-wrap{
+    width: 100%;
+    min-height: 300px;
+    @media screen and (max-width: $tablet-container){
+      @include order(2);
+      img{
+        width: 100%;
+      }
+    }
+    iframe{
+      width: 100%;
+      height: 100%;
+      min-height: 300px;
+    }
+  }
+}
+
+#gmap{
+  min-height: 300px;
+  width: 100%;
+}
+
+
+
+
+
+

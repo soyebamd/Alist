@@ -1,0 +1,21 @@
+.what-can-do{
+  &__outer-wrap{
+    ul{
+
+      li{
+        @media screen and (min-width: $tablet-container + 1){
+          width: 20%;
+          padding: 0 2%;
+        }
+      }
+    }
+  }
+}
+
+.parents-students{
+  &__btn-wrap{
+    p{
+      width: 100% !important;
+    }
+  }
+}

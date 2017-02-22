@@ -1,0 +1,33 @@
+// Container Widths
+$mobile-phone-container: 480px;
+$mobile-tablet-container: 767px;
+$tablet-container: 970px;
+$desktop-container: 1280px;
+
+.content-outer-wrap, .container-outer-wrap{
+  width: 100%;
+  position: relative;
+  @include display(flex);
+  @include align-items(center);
+  @include flex-direction(column);
+
+}
+.container{
+  max-width: $desktop-container !important;
+  width: 90% !important;
+  // @media screen and (max-width: $tablet-container - 1){
+  //   width: 90%;
+  // }
+}
+
+.container-content-wrap{
+  margin-top: 110px
+}
+
+.container-full{
+  width: 100%;
+}
+
+.con-25-w-d{
+  width: 21% !important;
+}

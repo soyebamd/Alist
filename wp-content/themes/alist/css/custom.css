@@ -1,0 +1,196 @@
+.orgn-note{
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+}
+.orgn-note .default-btn{
+    margin-top: 2%;
+}
+.my-button{
+    color: #fff;
+    text-decoration: none;
+}
+.payment_box.payment_method_authorize_net_aim.fieldset { display:inline-block;}
+.gform_wrapper form {
+    text-align: left;
+    overflow-x: hidden;
+    max-width: 100%;
+    margin: 0 auto;
+    float: left;
+    width: 100%;
+}
+.gform_wrapper {
+    margin: 16px 0;
+    max-width: 100%;
+    float: left;
+    width: 100%;
+}
+.four-column ul li, .exceptional-sat ul li{
+    background: transparent !important;
+}
+.white-bg {
+    background: #fff !important;
+}
+.four-column ul li p > a {
+    margin: 0;
+}
+.test-subject.blog{
+    float: none;
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+.status-publish {
+    float: left;
+    width: 100%;
+    margin: 20px 0;
+    /*position:relative;*/
+}
+.status-publish a:first-child img {
+    /*position: absolute;*/
+    margin: 20px 0;
+    left: 0;
+    top: 0;
+    max-width: 100%;
+
+}
+.status-publish h2 a {
+    font-style: normal;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 0 10px 0;float:left; width:100%;
+    text-align: left;
+}
+.cart_totals {
+    width: 100% !important;
+}
+span.newer a {
+    float: left;
+}
+span.older a {
+    float: right;
+}
+span.newer a, span.older a {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #efefef;
+    margin: 0 0 5px 5px;
+    background: rgba(243, 14, 25, 0.94);
+    color: #fff;
+}
+span.newer a:hover, span.older a:hover {
+    color: red;
+    background: #fff;
+}
+.carousel {
+    min-height: 400px;
+}
+.container-content ul li a {
+    color: #da1f28 !important;
+}
+.postLeft {
+    float: left;
+    display: inline-block;
+    width: 20%;
+    margin: 0 10px 0 0;
+    text-align: center;
+    max-height: 200px;
+    overflow: hidden;
+}
+.postLeft a:first-child{
+    display: inline-block;
+}
+.postRight {
+    overflow: hidden;
+}
+.sidebar-nav h4 {
+    float: left;
+    width: 100%;
+    padding: 5px 10px;
+}
+.sidebar-nav::-webkit-scrollbar {
+    width: 12px;
+}
+.sidebar-nav::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+.sidebar-nav::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px #da1f28;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background:#da1f28; 
+    -webkit-box-shadow: inset 0 0 6px #da1f28; 
+}
+
+div.product-img img.attachment-shop_catalog.size-shop_catalog{
+    height: 200px;
+    overflow: hidden;
+    width: auto!important;
+    float: left;
+}
+.online-books-content .summary {
+    float:left!important; 
+    width:100%!important; 
+    margin: 10px 0 30px!important;
+}
+.online-books-content h3 {
+    margin: 0 auto 24px; 
+    float:left; width:100%; 
+    text-align:left; 
+    font-size: 20px; padding:0!important;
+}
+.online-books-content .images { 
+    float:left!important; 
+    max-width:230px; width:100%; 
+    position: absolute; 
+    left: 0; 
+    top: 10px;  
+    border: none!important;
+}
+.woocommerce .products ul li { border-bottom:none!important;}
+.woocommerce-Price-amount.amount { float:left; width:100%; margin:0!important;}
+.shipmentNotes .container-content ul li a {word-wrap:break-word;}
+.shipmentNotes .container-content ul li { background-size:14px!important;background-position:0 5px!important; padding:0 0 0 25px!important; background-image:url("./images/red-arrow.png")!important;}
+li.product-category.product {
+    min-height: inherit !important;
+}
+.omsc-toggle-title {
+    color: #da1f28;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17.7px;
+    font-family: 'GothamBold', sans-serif;
+    border:1px solid #e1e1e1;
+    border-color:rgba(0,0,0,0.10);
+}
+
+.omsc-accordion{
+    border-top: none !important; 
+}
+
+@media only screen and (max-width: 800px) {
+    .related .products li {
+        width: 50%!important;
+        padding: 0 2% 0 0!important;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .online-books-content .images {
+        position:relative!important;
+        top:0;
+        left:0;
+    }
+    div.summary {
+        padding:10px 0;
+    }
+div.product-img img.attachment-shop_catalog.size-shop_catalog { height:auto!important;}
+}
+@media only screen and (max-width: 500px) {
+    .related .products li {
+        width: 100%!important;
+        padding: 0 2% 0 0!important;
+    }
+}

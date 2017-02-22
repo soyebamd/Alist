@@ -1,0 +1,56 @@
+.four_column a {
+	text-decoration: none !important;
+}
+
+.about-text{
+	@media screen and (max-width: 480px){
+		width: 100% !important;
+	p {
+	   // padding: 0 28% !important;
+	}
+	h3{
+	  margin: 0 auto;
+	}
+	h5 {
+	  margin: 0 auto;
+	}
+  }
+}
+
+.featured-studies{
+  @media screen and(max-width: 480px){
+    h6{
+      text-align: center;
+    }
+    p a{
+    	text-decoration: none;
+    }
+  }
+}
+.consider-taking{
+  @media screen and(max-width: 480px){
+    h5{
+      text-align: center;	
+    }
+  }
+}
+
+.isee-ssat-content {
+	@media screen and(max-width: 480px){
+		@include display(flex);
+		@include flex-direction(column);
+	}
+}
+
+.table-responsive {
+	@media screen and (max-width: 480px){
+		overflow-x: auto;
+	}
+}
+
+div.container {
+	@media screen and (max-width: 480px){
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+}

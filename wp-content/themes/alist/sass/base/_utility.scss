@@ -1,0 +1,121 @@
+.img-full-width{
+  width: 100%;
+  height: auto !important;
+  display:block;
+}
+
+// Flex Containers
+.flex{
+  @include display(flex);
+}
+
+// Flex Direction Column
+.flex-dir-col{
+  @include flex-direction(column);
+}
+
+// Justify Space Between
+.flex-just-spab{
+  @include justify-content(space-between);
+}
+
+// Justify Space Around
+.flex-just-spar{
+  @include justify-content(space-around);
+}
+
+// Justify Center
+.flex-just-cent{
+  @include justify-content(center);
+}
+
+// Justify Flex End
+.flex-just-end{
+  @include justify-content(flex-end);
+}
+
+// Align Center
+.flex-align-cent{
+  @include align-items(center);
+}
+
+// Align Flex End
+.flex-align-end{
+  @include align-items(flex-end);
+}
+
+// Align Flex Base
+.flex-align-base{
+  @include align-items(baseline);
+}
+
+// Flex Wrap 
+.flex-wrap{
+  @include flex-wrap(wrap);
+}
+
+.utility{
+  // Relative Container
+  &__rel-container{
+    position: relative !important;
+  }
+  // Absolute Container
+  &__absolute-container{
+    position: absolute !important;
+  }
+  // Relative Container
+  &__absolute-link{
+    position: absolute !important;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+  }
+  &__cursor-pointer{
+    cursor:pointer;
+  }
+  &__hide-on-desktop{
+    @media screen and (min-width: 971px){
+      display: none !important;
+    }
+  }
+  &__hide-on-mobile{
+    @media screen and (max-width: 970px){
+      display: none !important;
+    }
+  }
+}
+
+
+// Site Specific Utility Classes
+.utility{
+  &__mar-bumb-top-bottom{
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  &__pad-bump-top-btm-mdm{
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  &__pad-bump-top-btm-sm{
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+  &__no-pad-btm{
+    padding-bottom: 0 !important;
+  }
+  &__container-sec-inner{
+    padding: 20px 40px;
+  }
+  &__strip-link-style{
+    text-decoration: none !important;
+    font-style: initial !important;
+  }
+  &__center-text{
+    text-align: center !important;
+  }
+  &__left-text{ 
+    text-align: left !important; 
+  }
+}
+

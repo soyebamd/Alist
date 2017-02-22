@@ -1,0 +1,164 @@
+// body{
+//   margin: 0;
+//   overflow-x: hidden;
+// }
+
+// a, button{
+//   text-decoration: none;
+//   &:hover, &:active, &:visited, &:focus{
+//     text-decoration: none;
+//     outline-style: none;
+//   }
+// }
+
+// input{
+//  &:hover, &:active, &:visited, &:focus{
+//     outline-style: none;
+//   } 
+// }
+
+// ul{
+//   padding-left:0;
+//   list-style-type: none;
+// }
+
+// button, a{
+//   cursor:pointer;
+// }
+
+// Site Specific
+
+@media screen and (min-width: 1321px){
+  .alist-assessment img {
+      margin: 50px auto 0 !important;
+  }
+}
+
+// Index Page
+.testimonials-content{
+  min-height: 300px;
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(space-around);
+  @include align-items(center);
+}
+
+.page-template-default, .page-template-alist_parents_students_template{
+  .inner-pages-content{
+    @include display(flex);
+    @include align-items(center);
+    @include flex-direction(column);
+    .container-content{
+      max-width: 1280px;
+      width: 90%;
+    }
+  }
+}
+
+.isee-ssat-content{
+  margin: initial; 
+}
+
+.imgwrp-cont {
+	@include display(flex);
+	@include flex-wrap(wrap);
+	@include justify-content(space-around);
+	width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+} 
+
+grid__col-4-list-item{
+
+}
+
+// .isee-ssat-content img{
+// 	@include display(flex);
+// 	// width: 100%;
+// 	@include flex-wrap(wrap);
+// 	@include justify-content(space-around);
+// 	// @include flex-direction(row);
+// }
+
+
+.uk-banner{
+  padding: 12% 8% 12%;
+}
+
+.client-testimonials{
+  margin: 0px auto 0;
+  }
+.inner-pages-content{
+  padding: initial !important; 
+}
+
+.graphPanel_1 p{
+  text-align: left !important;
+}
+
+.services-icon{
+  ul{
+    @include display(flex);
+    @include justify-content(center);
+    @media screen and (max-width: 970px){
+      @include flex-wrap(wrap);
+      @include justify-content(space-around);
+      li{
+        width: 48%;
+      }
+    }
+    @media screen and (max-width: 480px){
+      @include flex-wrap(wrap);
+      @include justify-content(space-around);
+      li{
+        width: 98%;
+      }
+    }
+  }
+}
+.sample-content{
+  padding: 30px 60px;
+  @include display(flex);
+  @include justify-content(space-around);
+  @include flex-wrap(wrap);
+  @media screen and (max-width: 1279px){
+    padding: 4%;
+  }
+}
+
+.about-text{
+  padding: 20px 40px;
+  @include display(flex);
+  @include justify-content(space-around);
+  @include flex-wrap(wrap);
+  @include flex-direction(column);
+  @media screen and (max-width: 1279px){
+    padding: 2.5%;
+  }
+}
+
+.consider-taking, .total-option, .mintes-table, .question-table{
+  strong, b{
+    font-family: 'GothamBold', sans-serif;
+  }
+} 
+
+.container-content{
+  .rounded-links{
+    li{
+      font-family: 'GothamBold', sans-serif;    
+      color: $red !important;
+      span{
+        font-family: "GothamBook", sans-serif;
+        color: $black;
+      }
+      a{
+        // text-decoration: none !important;
+        font-style: initial !important;
+        font-family: 'GothamBold', sans-serif;    
+        color: $red !important;
+      }
+    }
+  }
+}

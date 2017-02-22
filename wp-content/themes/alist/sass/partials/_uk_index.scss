@@ -1,0 +1,29 @@
+.parents-partners-uk{
+  &__subheader-wrap{
+    ul{
+      margin: 35px auto 0;
+      margin-top: 35px !important;
+    }
+  }
+}
+.school-organization{
+  ul{
+    @include display(flex);
+    @include flex-wrap(wrap);
+    @include align-items(center);
+    @include justify-content(center);
+    margin: 20px 0 50px 0;
+  }
+}
+
+.why-choose{
+  &__uk-list-item{
+    
+  }
+}
+
+.why-choose__uk-list-item{
+  width: 23% !important;
+  padding: 0 0 0 33px !important;
+}
+

@@ -1,0 +1,241 @@
+.bookstore{
+    &__home-outer-wrap{
+        @include display(flex);
+        @include justify-content(center);
+        @include align-items(center);
+        @include flex-direction(column);
+        width: 100%;
+        h3{
+            margin-top: 5%;
+            text-align: center;
+        }
+    }   
+    &__home-meta-outer-wrap{
+        @include display(flex);
+        @include justify-content(space-around);
+        max-width: $tablet-container;
+        margin-bottom: 2%;
+        width: 100%; 
+        @media screen and (max-width: $mobile-tablet-container){
+            @include flex-direction(column);
+            width: 90%;
+        }
+    }
+    &__store-type-wrap{
+        @include display(flex);
+        @include align-items(center);
+        @include flex-direction(column);
+        img{
+
+        }
+        a{
+            margin: 10px 5px !important;
+        }
+    }
+    &__header{
+        font-weight: bold;
+        font-size: 14px;
+            padding: 15px 0;
+    }
+    &__btn-wrap{
+        @include display(flex);
+        margin: 20px 0 30px 0;
+        @media screen and (max-width: $mobile-tablet-container){
+            @include flex-direction(column);
+        }
+    }
+    &__top-school-banner{
+        width: 100%;
+        @include display(flex);
+        @include justify-content(center);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    &__top-school-banner-inner-wrap{
+        @include display(flex);
+        @include justify-content(space-around);
+        @include align-items(center);
+        padding: 4% 0;
+        max-width: $desktop-container;
+        width: 100%;
+        @media screen and (max-width: $tablet-container){
+            @include flex-wrap(wrap);
+        }
+    }
+    &__top-school-banner-item{
+        @media screen and (max-width: $tablet-container){
+            @include display(flex);
+            @include flex-direction(column);
+            @include align-items(center);
+            padding: 7% 0;
+            img{
+                padding: 8%;
+            }
+        }
+        h4{
+            max-width: 300px;
+        }
+        a{
+            margin: initial !important; 
+        }
+    }
+}
+
+
+// Shop List
+.bookstore{
+    &__shop-outer-wrap{
+
+    }
+    &__shop-inner-wrap{
+
+    }
+    &__shop-list-header-wrap{
+        margin: 4% 0 3% 0;
+        h4{}
+        p{
+            font-family: 'GothamBold', sans-serif;
+            max-width: $tablet-container;
+            text-align: center;
+            margin-top: 1%;
+        }
+    }
+    h4{
+
+    }
+    p{
+
+    }
+    &__shop-list-outer-wrap{
+    }
+    &__shop-list{
+        padding-left: 0;
+        @include flex-wrap(wrap);
+        @include justify-content(space-between);
+    }
+    &__shop-list-item{
+        width: 29%;
+        margin: 0 1em 3em 1em;
+        @media screen and (max-width: $mobile-tablet-container){
+            width: 99%;
+        }
+        @media screen and (min-width: $mobile-tablet-container +1) and (max-width: $tablet-container){
+            width: 45%;
+        }
+    }
+    &__shop-list-title{
+        font-family: 'GothamBold', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 10%;
+        max-width: 244px;
+    }
+    &__shop-list-price{
+        text-align: center;     
+        a{
+            font-family: 'GothamBold', sans-serif;
+            color: black !important;
+            font-weight: bold;
+        }  
+    }
+    &__shop-list-initial-item{
+        width: 100%;
+        background: #f7f7f7;
+        padding: 5% 15%;
+    }
+    &__shop-list-overlay-item{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: transparentize(black, .25);
+        @include display(flex);
+        @include flex-direction(column);
+        @include align-items(center);
+        @include justify-content(center);
+    }
+    &__shop-list-overlay-item-inner-wrap{
+        padding: 10%;
+        @include display(flex);
+        @include flex-direction(column);
+        @include align-items(center);
+        @include justify-content(center);
+        text-align: center;
+        line-height: 1.5em;
+    }
+    &__shop-img-overlay-wrap{
+        position: relative;
+        width: 100%;
+    }
+}
+
+$desktop-product-img-container-width: 30%;
+$desktop-product-summary-container-width: 70%;
+
+$mobile-product-img-container-width: 95%;
+$mobile-product-summary-container-width: 95%;
+
+.product{
+    .images{
+        width: $desktop-product-img-container-width !important;
+        @media screen and (max-width: $tablet-container){
+            width: $mobile-product-img-container-width !important;
+        }
+    }
+    .summary{
+        width: $desktop-product-summary-container-width !important;
+        @media screen and (max-width: $tablet-container){
+            width: $mobile-product-img-container-width !important;
+        }
+        .description{
+            max-width: 70%;
+        }
+        .price{
+            color: $blue !important;
+            padding: 5px 0 20px 0;
+            font-family: "GothamBold", sans-serif;
+            span{
+                color: $blue !important;
+            }
+        }
+    }
+    &__meta-inner-wrap{
+        @media screen and (max-width: $tablet-container){
+            @include flex-direction(column);
+            @include align-items(center);
+        }
+    }
+}
+
+.wc-tabs-wrapper-spacer{
+    width: $desktop-product-img-container-width;
+    @media screen and (max-width: $tablet-container){
+        display: none;
+    }
+}
+
+.wc-tabs-wrapper{
+    width: $desktop-product-summary-container-width;   
+}
+
+.woocommerce-Tabs-panel{
+    max-width: 70%;
+}
+
+.woocommerce div.product div.images, .woocommerce div.product div.summary{
+    margin-bottom: initial;
+}
+// Disable Tabs
+.wc-tabs{
+    display: none;
+}
+
+
+
+
+
+
+
+

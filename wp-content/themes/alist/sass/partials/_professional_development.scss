@@ -1,0 +1,47 @@
+.profess-develop{
+  &__list-outer-wrap{
+    ul{
+      @include display(flex);
+      @include flex-wrap(wrap);
+      @include justify-content(flex-start);
+      li{
+        width: 24%;
+        padding: 1%;
+        margin: initial;
+      }
+    }
+  }
+}
+
+.location-map-us{
+  &__inner-wrap{
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include display(flex);
+    @include justify-content(center);
+    @include flex-direction(column);
+    @include align-items(center);
+    // padding: 5% 0 3% 0;
+    a{
+      // margin: 50% 0 0% 0;
+    }
+  }
+  &__meta-wrap{
+    @include display(flex);
+    @include justify-content(center);
+    @include flex-direction(column);
+    @include align-items(center);
+    padding: 6% 0;
+    p{
+      // max-width: $tablet-container;
+      text-align: center;
+      color: $red;
+      font-weight: bold;
+      line-height: 1.5em;
+    }
+    a{
+      margin-top:1.5%;
+
+    }
+  }
+}

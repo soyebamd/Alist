@@ -1,0 +1,143 @@
+.icon-list{
+  &__outer-wrap{
+    @include display(flex);
+    @include justify-content(center);
+    padding: 4% 0;
+    width: 100%;
+  }
+  &__item-wrap{
+    border: 1px solid #fff !important;
+    border-radius: 100px !important;
+    -webkit-border-radius: 100px !important;
+    -moz-border-radius: 100px !important;
+    -ms-border-radius: 100px !important;
+    background: #da1f28 !important;
+    text-align: center !important;
+    line-height: 105px !important;
+    box-shadow: 0px 0px 0px 5px #da1f28 !important;
+    -webkit-box-shadow: 0px 0px 0px 5px #da1f28 !important;
+    -moz-box-shadow: 0px 0px 0px 5px #da1f28 !important;
+    -ms-box-shadow: 0px 0px 0px 5px #da1f28 !important;
+    display: inline-block !important;
+    margin: 0 auto !important;
+    background: $red !important;
+    padding-left: 0 !important;
+    width: 107px; 
+    height: 107px;
+    @include transition(background 300ms ease-in-out);
+    &:hover{
+      background: darken($red, 6) !important;
+    }
+    img{
+      
+    }
+    a{
+      @include display(flex);
+      @include align-items(center);
+      @include justify-content(center);
+      height: 100%;
+      cursor: pointer;
+    }
+  }
+  &__inner-wrap{
+    max-width: $desktop-container;
+    padding-left: 0;
+    @include display(flex);
+    @include justify-content(space-around);
+    @include flex-wrap(wrap);
+    @include align-items(flex-start);
+    width: 100%;
+    li{
+      position: relative;
+      width: 24% !important;
+      list-style-type: none !important;
+      @include display(flex);
+      @include justify-content(center);
+      @include flex-direction(column);
+      @include align-items(center);
+      margin-bottom: 3%;
+      background: initial !important;
+      @media screen and (max-width: $mobile-phone-container){
+        width: 99% !important;
+      }
+      @media screen and (min-width: $mobile-phone-container + 1) and (max-width: $tablet-container){
+        width: 48% !important;
+      }
+      a{      
+        @include display(flex);
+        @include justify-content(center);
+        @include align-items(center);
+        @include flex-direction(column);
+        span{
+          display: block;
+          margin: 16px auto 0;
+          width: 69%;
+          font: normal 16.72px 'GothamBold', sans-serif;
+          text-align: center;
+          color: #da1f28;
+          letter-spacing: -0.5px;
+          line-height: 19px;
+        }
+      }
+      p{
+        line-height: initial !important;
+        margin: 0;
+        margin-top: 20px !important;
+        color: $red;
+        font-weight: bold;
+        max-width: 200px;
+        text-align: center;
+        line-height: 20px;
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+.list-wrap-20{
+  li{
+    @media screen and (min-width: $tablet-container + 1){
+      width: 19% !important;
+    }
+  }
+}
+
+.list-style-normal{
+  padding-left: 20px !important;
+  li{
+    background: none !important;
+    margin: 0 auto 0px !important;
+    padding: 0 0 0 0px !important;
+    list-style-type: disc !important;
+  }
+}
+
+.list-style-block-icon{
+  @include display(flex);
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+  li{
+    background: $light-light-light-gray !important;
+    padding-left: 0 !important;
+    width: 22% !important;
+    margin: 10px !important;
+    @media screen and (max-width: $mobile-phone-container){
+      width: 98% !important;
+    }
+    @media screen and (min-width: $mobile-phone-container + 1) and (max-width: $tablet-container - 1){
+      width: 46% !important;
+    }
+    @include display(flex);
+    @include flex-direction(column);
+    @include justify-content(center);
+    padding: 2% !important;
+    p{
+      display: block;
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+      text-align: center;
+    }
+  }
+}
+
+

@@ -1,0 +1,22 @@
+// Resets 
+.newsletter-filed{
+  margin-top: 0;
+  .widget-title{
+    margin-top: 3px;
+    font-size: 16px;
+  }
+}
+
+.footer-nav ul li a{
+  font-weight: bold;
+}
+.newsletter-form ul {
+  margin: 0px auto 0;
+}
+
+#menu-footer_menu{
+  .current_page_item a:nth-of-type(1){
+    color: $gray !important;
+    border-bottom: none !important;
+  }
+}

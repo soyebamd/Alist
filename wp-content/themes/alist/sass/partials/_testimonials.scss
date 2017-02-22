@@ -1,0 +1,93 @@
+.student-story{
+  &__header-img{
+    text-align: center;
+    padding: 0 0 2% 0;
+    margin-top: 0 !important;
+    @include display(flex);
+    @include align-items(center);
+    @include flex-direction(column);
+    @include justify-content(center);
+    img{
+      margin-right: 10px;
+    }
+    h4{
+      margin-top: 5px;
+    }
+  }
+  &__img{
+    border: 4px solid transparent;
+    border-radius: 50%;
+    height: 140px;
+    margin: 0 13.5px;
+    overflow: hidden;
+    text-indent: 0;
+    width: 140px;
+    border-color: #da1f28;
+    box-shadow: 5px 5px 5px rgba(5, 5, 6, 0.4);
+  }
+  &__testimonial-header{
+    font-size: 30.74px;
+    font-family: 'GothamBold', sans-serif;
+    text-align: center;
+    padding: 3% 0;
+  }
+  &__img-wrap{
+    width: 20%;
+    @include display(flex);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: $tablet-container) {
+      width: 99%;
+      @include order(2);
+    }
+    @media screen and (min-width: $tablet-container + 1) and (max-width: $desktop-container){
+      width: 30%;
+    }
+    b{
+      color: $red;
+      text-align: center;
+    }
+  }
+  &__outer-wrap{
+    background:$light-gray;
+    @include display(flex);
+    @include flex-direction(column);
+    width: 100%;
+    padding: 3%;
+  }
+  &__inner-wrap{
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+    @include flex-wrap(wrap);
+  }
+  &__content-wrap{
+    width: 80%;
+    max-width: $tablet-container;
+    line-height: 1.5em;
+    text-align: justify;
+    @media screen and (max-width: $tablet-container) {
+      width: 99%;
+      @include order(1);
+      margin: 4% 3% 5% 3%;
+    }
+    @media screen and (min-width: $tablet-container + 1) and (max-width: $desktop-container){
+      width: 70%;
+    }
+    span{
+      font-size: 16px;
+      line-height: 29px;
+      font-style: italic;
+    }
+  }
+}
+
+
+.omsc-accordion{
+    border-top: none !important; 
+}
+ 
+.client-testimonials{
+  
+}

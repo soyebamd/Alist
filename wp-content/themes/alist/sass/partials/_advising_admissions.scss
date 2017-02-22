@@ -1,0 +1,25 @@
+.advising_admissions{
+  &__outer-wrap{
+    margin: 4%;
+    h5{
+      line-height: 20px;
+    }
+  }
+}
+
+.services-include{
+  &__25w{
+    ul{
+      li{
+        width: 15%;
+      } 
+    }
+  }
+}
+
+.service-include ul {
+  @media screen and (max-width: 480px){
+    @include display(flex);
+    @include flex-direction(column);
+  }
+}

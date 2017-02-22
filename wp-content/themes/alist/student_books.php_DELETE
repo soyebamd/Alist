@@ -1,0 +1,228 @@
+<div class="main-body">
+    <div class="main-content">
+        <div class="sidebar-nav">
+            <div class="sidebar-toggle">
+                <a href="javascript:void(0);"><span>Sidebar Menu</span><i class="glyphicon glyphicon-menu-down"></i></a>
+            </div><!--sidebar-toggle-->
+            <ul>
+                <li><a class="active" href="javascript:void(0);">Get Started</a></li>
+                 <?php
+                if (has_nav_menu('side-menu')):
+                    $args = array(
+                        'theme_location' => 'side-menu',
+                    );
+                    wp_nav_menu($args);
+                endif;
+                ?>
+            </ul>
+        </div><!--sidebar-nav-->
+        <div class="inner-page-content">
+            <div class="inner-banner">
+                <?php
+                 $feat_image = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
+                  ?>
+                <div class="inner-caption" style="background-image: url(<?php echo $feat_image;; ?>)">
+                    <h2><?php the_title(); ?></h2>
+                </div><!--inner-caption-->
+            </div><!--inner-banner-->
+            <div class="clearfix"></div><!--clearfix-->
+            <div class="breadcrumb">
+                <ul>
+                   <?php
+                    if (function_exists('bcn_display')) {
+                        bcn_display();
+                    }
+                    ?>  </ul>
+            </div><!--breadcrumb-->
+            <div class="clearfix"></div><!--clearfix-->
+            <div class="inner-pages-content">
+                <div class="online-books-content">
+                    <h2>Student Books & Online Materials</h2>
+                    <h5>A-List clients receive copies of our SAT and/or ACT Books of Knowledge as part of our tutoring program.</h5>
+                    <select>
+                        <option>All Subjects</option>
+                        <option>All Subjects</option>
+                        <option>All Subjects</option>
+                        <option>All Subjects</option>
+                        <option>All Subjects</option>
+                        <option>All Subjects</option>
+                    </select>
+                    <div class="online-products">
+                        <?php
+                        if (have_posts()) :
+
+                            woocommerce_content();
+
+                        endif;
+                        ?>
+                       
+                        <ul>
+                            <li>
+                                <div class="product-img">
+                                    <a href="ultimate-act-prep-package.html"><img src="<?php echo bloginfo('template_directory'); ?>/images/book-img.jpg" alt=""></a>
+                                </div><!--product-img-->
+                                <div class="product-detail">
+                                    <div class="product-content">
+                                        <h5><a href="<?php echo get_settings('home')?>">ULTIMATE ACT PREP PACKAGE (5 Products)</a></h5>
+                                        <label>$64.99</label>
+                                        <div class="product-rating">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                        </div><!--product-rating-->
+                                        <p>Everything a student needs to master ACT test content! Includes 4 products: ACT Book of Knowledge, ACT Book of Knowledge Student Solutions Manual, The Vocab Videos Workbook, a 6-month Vocab Videos student account (www.VocabVideos.com), and The Book of Answers.</p>
+                                        <a href="ultimate-act-prep-package.html">See More</a>
+                                    </div><!--product-content-->
+                                    <a href="javascript:void(0);" class="default-btn">Add to Cart</a>
+                                </div><!--product-detail-->
+                            </li>
+                            <li>
+                                <div class="product-img">
+                                    <a href="<?php echo get_settings('home')?>"><img src="<?php echo bloginfo('template_directory'); ?>/images/book-img.jpg" alt=""></a>
+                                </div><!--product-img-->
+                                <div class="product-detail">
+                                    <div class="product-content">
+                                        <h5><a href="<?php echo get_settings('home')?>">ULTIMATE ACT PREP PACKAGE (5 Products)</a></h5>
+                                        <label>$64.99</label>
+                                        <div class="product-rating">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                        </div><!--product-rating-->
+                                        <p>Everything a student needs to master ACT test content! Includes 4 products: ACT Book of Knowledge, ACT Book of Knowledge Student Solutions Manual, The Vocab Videos Workbook, a 6-month Vocab Videos student account (www.VocabVideos.com), and The Book of Answers.</p>
+                                        <a href="<?php echo get_settings('home')?>">See More</a>
+                                    </div><!--product-content-->
+                                    <a href="javascript:void(0);" class="default-btn">Add to Cart</a>
+                                </div><!--product-detail-->
+                            </li>
+                            <li>
+                                <div class="product-img">
+                                    <a href="<?php echo get_settings('home')?>"><img src="<?php echo bloginfo('template_directory'); ?>/images/book-img.jpg" alt=""></a>
+                                </div><!--product-img-->
+                                <div class="product-detail">
+                                    <div class="product-content">
+                                        <h5><a href="<?php echo get_settings('home')?>">ULTIMATE ACT PREP PACKAGE (5 Products)</a></h5>
+                                        <label>$64.99</label>
+                                        <div class="product-rating">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                        </div><!--product-rating-->
+                                        <p>Everything a student needs to master ACT test content! Includes 4 products: ACT Book of Knowledge, ACT Book of Knowledge Student Solutions Manual, The Vocab Videos Workbook, a 6-month Vocab Videos student account (www.VocabVideos.com), and The Book of Answers.</p>
+                                        <a href="<?php echo get_settings('home')?>">See More</a>
+                                    </div><!--product-content-->
+                                    <a href="javascript:void(0);" class="default-btn">Add to Cart</a>
+                                </div><!--product-detail-->
+                            </li>
+                            <li>
+                                <div class="product-img">
+                                    <a href="<?php echo get_settings('home')?>"><img src="<?php echo bloginfo('template_directory'); ?>/images/book-img.jpg" alt=""></a>
+                                </div><!--product-img-->
+                                <div class="product-detail">
+                                    <div class="product-content">
+                                        <h5><a href="<?php echo get_settings('home')?>">ULTIMATE ACT PREP PACKAGE (5 Products)</a></h5>
+                                        <label>$64.99</label>
+                                        <div class="product-rating">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                        </div><!--product-rating-->
+                                        <p>Everything a student needs to master ACT test content! Includes 4 products: ACT Book of Knowledge, ACT Book of Knowledge Student Solutions Manual, The Vocab Videos Workbook, a 6-month Vocab Videos student account (www.VocabVideos.com), and The Book of Answers.</p>
+                                        <a href="<?php echo get_settings('home')?>">See More</a>
+                                    </div><!--product-content-->
+                                    <a href="javascript:void(0);" class="default-btn">Add to Cart</a>
+                                </div><!--product-detail-->
+                            </li>
+                            <li>
+                                <div class="product-img">
+                                    <a href="<?php echo get_settings('home')?>"><img src="<?php echo bloginfo('template_directory'); ?>/images/book-img.jpg" alt=""></a>
+                                </div><!--product-img-->
+                                <div class="product-detail">
+                                    <div class="product-content">
+                                        <h5><a href="<?php echo get_settings('home')?>">ULTIMATE ACT PREP PACKAGE (5 Products)</a></h5>
+                                        <label>$64.99</label>
+                                        <div class="product-rating">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                        </div><!--product-rating-->
+                                        <p>Everything a student needs to master ACT test content! Includes 4 products: ACT Book of Knowledge, ACT Book of Knowledge Student Solutions Manual, The Vocab Videos Workbook, a 6-month Vocab Videos student account (www.VocabVideos.com), and The Book of Answers.</p>
+                                        <a href="<?php echo get_settings('home')?>">See More</a>
+                                    </div><!--product-content-->
+                                    <a href="javascript:void(0);" class="default-btn">Add to Cart</a>
+                                </div><!--product-detail-->
+                            </li>
+                            <li>
+                                <div class="product-img">
+                                    <a href="<?php echo get_settings('home')?>"><img src="<?php echo bloginfo('template_directory'); ?>/images/book-img.jpg" alt=""></a>
+                                </div><!--product-img-->
+                                <div class="product-detail">
+                                    <div class="product-content">
+                                        <h5><a href="<?php echo get_settings('home')?>">ULTIMATE ACT PREP PACKAGE (5 Products)</a></h5>
+                                        <label>$64.99</label>
+                                        <div class="product-rating">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                        </div><!--product-rating-->
+                                        <p>Everything a student needs to master ACT test content! Includes 4 products: ACT Book of Knowledge, ACT Book of Knowledge Student Solutions Manual, The Vocab Videos Workbook, a 6-month Vocab Videos student account (www.VocabVideos.com), and The Book of Answers.</p>
+                                        <a href="<?php echo get_settings('home')?>">See More</a>
+                                    </div><!--product-content-->
+                                    <a href="javascript:void(0);" class="default-btn">Add to Cart</a>
+                                </div><!--product-detail-->
+                            </li>
+                            <li>
+                                <div class="product-img">
+                                    <a href="<?php echo get_settings('home')?>"><img src="<?php echo bloginfo('template_directory'); ?>/images/book-img.jpg" alt=""></a>
+                                </div><!--product-img-->
+                                <div class="product-detail">
+                                    <div class="product-content">
+                                        <h5><a href="<?php echo get_settings('home')?>">ULTIMATE ACT PREP PACKAGE (5 Products)</a></h5>
+                                        <label>$64.99</label>
+                                        <div class="product-rating">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                        </div><!--product-rating-->
+                                        <p>Everything a student needs to master ACT test content! Includes 4 products: ACT Book of Knowledge, ACT Book of Knowledge Student Solutions Manual, The Vocab Videos Workbook, a 6-month Vocab Videos student account (www.VocabVideos.com), and The Book of Answers.</p>
+                                        <a href="<?php echo get_settings('home')?>">See More</a>
+                                    </div><!--product-content-->
+                                    <a href="javascript:void(0);" class="default-btn">Add to Cart</a>
+                                </div><!--product-detail-->
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div><!--clearfix-->
+                        <div class="product-pagination">
+                            <ul>
+                                <li><span>Page 1 of 3</span></li>
+                                <!--                                            <li><a href="javascript:void(0)"><i class="glyphicon glyphicon-menu-left"></i><strong>Previous</strong></a></li>-->
+                                <li><a href="javascript:void(0)"><strong>Next</strong><i class="glyphicon glyphicon-menu-right"></i></a></li>
+                            </ul>
+                        </div><!--product-pagination-->
+
+                    </div><!--online-products-->
+
+                </div><!--online-books-content-->
+
+
+
+            </div><!--sat-subject-content-->
+            <div class="clearfix"></div><!--clearfix-->
+
+        </div><!--inner-page-content-->
+    </div><!--main-content-->
+            </div><!--main-body-->

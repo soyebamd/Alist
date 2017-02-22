@@ -1,0 +1,42 @@
+.train-consult{
+  &__list-wrap{
+    padding-left:0;
+    li{
+      @include display(flex);
+      @include flex-direction(column);
+      @include align-items(center);
+      margin-bottom: 15px;
+      min-width: 210px !important; 
+      width: 18% !important;
+      span{
+        img{
+          max-width: 45px;
+        }
+      }
+    }
+  }
+  &__list-outer-wrap{
+    margin-bottom: 50px;
+    margin-top: 10px;
+  }
+}
+
+.teach-train-consult{
+  &__list-wrap{
+    padding-left:0;
+    @include justify-content(space-around);
+    li{
+      margin: initial !important;
+      width: 23% !important;
+      padding: 10px !important;
+      @media screen and (max-width: $desktop-container){
+        width: auto;
+      }
+    }
+  }
+}
+
+.roundBox li p {
+  max-width: 200px;
+  line-height: 1.25em;
+}

@@ -1,0 +1,7 @@
+.us-location-btn{
+  width: 100%;
+  position: absolute;
+  bottom: 3%;
+  @include display(flex);
+  @include justify-content(center);
+}

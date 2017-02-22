@@ -1,0 +1,21 @@
+.success-stories{
+  &__stat-slider-outer-wrap{
+    margin-top: 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__stat-img{
+    max-width: $mobile-tablet-container;
+    width: 65%;
+    @media screen and (max-width: $tablet-container){
+      width: 80%;
+    }
+  }
+  &__outer-wrap{
+    &:first-of-type{
+      .inner-pages-content{
+        margin-bottom: 5%;
+      }
+    }
+  }
+}

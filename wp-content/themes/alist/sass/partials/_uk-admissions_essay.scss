@@ -1,0 +1,12 @@
+.services-include {
+	@include display(flex);
+	@include flex-wrap(wrap);
+	@include flex-flow(row wrap);
+	@include justify-content(center);
+	@include align-items(center);
+	@include flex-direction(row);
+}
+
+.services-include ul li {
+	vertical-align: baseline;
+}

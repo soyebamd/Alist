@@ -1,0 +1,8 @@
+<div class="student-story__outer-wrap">
+<div class="student-story__header-img"><img class="aligncenter size-full wp-image-1747" src="/wp-content/themes/alist/images/a-list-red-no-bg-161-161.png" alt="alist-symbol-bookstore" width="60" height="60" /><h4>Student’s Story</h4></div>
+<div class="student-story__inner-wrap"><div class="student-story__img-wrap"><img class="aligncenter size-medium wp-image-5667 student-story__img" src="http://demo.alisteducation.com/wp-content/uploads/2016/11/student-226x300.png" alt="student" width="150" height="150" />
+<b>Olivia Kalash</b>
+<b>Schreiber HS, 2015</b>
+</b><b>Vanderbilt, 2019</b></div>
+<div class="student-story__content-wrap"><span style="font-weight: 400;">“There I was, an overwhelmed and burnt-out senior, anxiously awaiting my future. Since beginning the college process early junior year, I knew my heart was set on Vandy. I also knew that getting accepted would not be an effortless venture. I researched the admission statistics and testing scores for incoming fall 2015 students. Once I realized that I had a chance GPA-wise, I knew it was time to start studying for the dreaded standardized tests. The relationship formed between the tutor and student is one that cannot be matched in the classroom. My tutor became like family, and by the time I was  finished with the ACT, my score had improved by at least 8 points! A-List gave me the necessary tools and confidence to succeed. When it was  nally time to submit my application, my apprehension about whether I would be admitted had turned into excitement over the very real possibility of going to Vanderbilt. I am so grateful to A-List for helping me attend my dream college.” </span></div>
+</div>

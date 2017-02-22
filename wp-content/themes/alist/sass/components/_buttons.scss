@@ -1,0 +1,80 @@
+// Default Red Button
+.default-btn{
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f93e47', endColorstr='#da1f28',GradientType=0 );
+  color: #fff;
+  font-family: "GothamBook", sans-serif !important;
+  margin: 0 auto !important;
+  width: 227px !important;
+  display: block;
+  min-height: 44px;
+  line-height: 24px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 1px 1px 1px rgba(5,5,6,0.3);
+  color: #fff !important;
+  text-decoration: none !important;
+  @include background-image(linear-gradient(#f93e47, #da1f28));
+  font-style: initial !important;
+  position: relative;
+  z-index: 100;
+  border: none !important;
+  &:before{
+    @include background-image(linear-gradient(#f93e47, darken(#da1f28, 8)));
+    content: '';    
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: -100;
+    @include transition(opacity 0.45s);
+  }
+  &:hover{
+        &:before {
+      opacity: 1;
+    }
+  }
+}
+
+
+// Default Blue Button
+.default-blue-btn{
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f93e47', endColorstr='#da1f28',GradientType=0 );
+  color: #fff;
+  font-family: "GothamBook", sans-serif !important;
+  margin: 0 auto;
+  width: 227px;
+  display: block;
+  min-height: 44px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none !important;
+  font-style: initial !important;
+  padding: 10px;
+  box-shadow: 1px 1px 1px rgba(5,5,6,0.3);
+  color: #fff !important;
+  @include background-image(linear-gradient(#225fa4, #154d8d));
+  font-style: initial !important;
+  position: relative;
+  z-index: 100;
+  border: none !important;
+  font-style: initial !important;
+  &:before{
+    @include background-image(linear-gradient(#225fa4, darken(#154d8d, 8)));
+    content: '';    
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: -100;
+    @include transition(opacity 0.45s);
+  }
+  &:hover{
+        &:before {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+wp-config.php
+*.log
+
+DB
+nbproject
+
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/wp-cache-config.php
+wp-content/plugins/hello.php
+wp-content/uploads/fly-images/
+wp-content/uploads
+wp-content/themes/alist/.sass-cache/

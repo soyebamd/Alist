@@ -1,0 +1,105 @@
+// Header Resets
+.navbar-menu li a {
+  text-transform: uppercase !important;
+}
+
+.main-menu{
+  padding: 33px 0 0 !important;
+}
+
+.search-box input {
+  height: 34px;
+  padding: 3px 24px 0px 8px;
+  font: italic 12px 'Bookmania-Reg',sans-serif;
+  width: 100%;
+}
+.search-box i {
+  margin: -24px 8px 0 auto;
+  position: relative;
+  color: #d0d0d0;
+  float: right;
+  font-size: 1.1em;
+}
+
+.search-box{
+  top: 33px;
+}
+
+.topbar{
+  @include display(flex);
+  @include align-items(center);
+}
+.global-reach ul li a:hover img, .global-reach ul li a.active img{
+  box-shadow: 3px 3px 7px rgba(5, 5, 6, 0.4);
+}
+.global-reach ul li a img {
+  @include transition(all 500ms ease-in-out);
+}
+
+.global-reach ul li a {
+  text-transform: uppercase;
+}
+
+.alist-assessment h3 {
+    margin: 90px auto 0;
+}
+
+.menu ul li:hover {
+  a{
+    // color: $red;    
+  }
+}
+
+.menu ul li{
+  a{
+    @include transition(color 300ms ease-in-out);
+  }
+}
+
+.current_page_item{
+  a{
+    &:nth-of-type(1){
+      // color: $red !important;
+      // border-bottom: solid 4px $red !important;
+      padding-bottom: 9px;  
+    }
+  }
+  .sub-menu{
+    li{
+      a{
+        color: $gray !important;
+        border-bottom: none !important;
+      }
+    }
+  }
+}
+
+.uk-main-logo{
+  top: 26px; 
+  width: 222px;
+  left: -13px;
+  a{
+    max-width: initial;
+  }
+}
+
+
+.top-nav{
+  @media screen and (max-width: $mobile-tablet-container){
+    display: none;
+  }
+}
+
+.logo-nav{
+ @media screen and (max-width: $tablet-container){
+    display: none;
+  } 
+}
+
+
+
+
+
+
+
+
