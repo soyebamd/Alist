@@ -41,7 +41,7 @@
             <?php endif ?>
             <div class="mrg25 w100 roundBox train-consult__list-outer-wrap">
                 <h6>WE CAN PROVIDE</h6>
-                    <ul class="w100 flex flex-wrap flex-just-spar flex-dir-col flex-align-cent train-consult__list-wrap">
+                    <ul class="w100 train-consult__list-wrap">
                         <li>
                             <a href="/schools-and-non-profits/professional-development-for-educators/"><span><img src="/wp-content/uploads/2016/08/provide_05.png" alt="Teacher Training" title="Teacher Training"></span></a>
                             <p><a href="/schools-and-non-profits/professional-development-for-educators/">Teacher Training</a></p>
