@@ -5216,6 +5216,8 @@ span.wpcf7-not-valid-tip {
     width: 100%!important;
 }
 
+.bookstore__price-meta-wrap .default-btn{ margin:16px auto!important;}
+
 @media only screen and (max-width: 1585px) {
     .what-alist-help ul {
         width: 80%;
