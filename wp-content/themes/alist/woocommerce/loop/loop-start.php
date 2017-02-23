@@ -19,7 +19,7 @@
         <div class="bookstore__shop-outer-wrap container-outer-wrap">
           <div class="bookstore__shop-inner-wrap container">
             <div class="bookstore__shop-list-header-wrap container-outer-wrap">
-            <h4><?php woocommerce_page_title(); ?></h4>  
+            <h3><?php woocommerce_page_title(); ?></h3>  
 <!--
                 <p class="red">A-List clients receive copies of our SAT and/or ACT Books of Knowledge as part of our tutoring program.</p>
 -->
