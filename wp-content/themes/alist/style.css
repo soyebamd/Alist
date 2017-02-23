@@ -6166,6 +6166,10 @@ text-align: left!important;
 }
 
 @media only screen and (max-width: 767px) {
+    /*hide text with image uk home page*/
+    .partner-programs{ 
+        display: none; 
+    }
     .status-publish {
         padding: 10px 0;
     }
