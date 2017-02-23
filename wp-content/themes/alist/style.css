@@ -6883,3 +6883,6 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 .alignright { float: right; }
 .alignleft { float: left; }
 .aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
+
+.getstarted-section .w100{ text-align: center; }
